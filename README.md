@@ -30,7 +30,7 @@ Browser plugin for sending documents and raw commands to a printer or attached d
 ### Mac (ARM)
 
 ```
-ant pkgbuild -Dauthcert.use="clarity_certs/cert.pem"
+ant pkgbuild -Dtarget.arch=aarch64 -Dauthcert.use="clarity_certs/cert.pem"
 ```
 
 ### Mac (Intel)
@@ -42,13 +42,11 @@ ant pkgbuild -Dauthcert.use="clarity_certs/cert.pem" -Dtarget.arch=x86_64
 ### Windows (x86)
 
 ```
-ant nsis \
-  -Dtarget.arch=x86_64 \
-  -Dauthcert.use="clarity_certs/cert.pem"
+ant nsis -Dtarget.arch=x86_64 -Dauthcert.use="clarity_certs/cert.pem"
 ```
 
 ### Windows (ARM)
 
 ```
-ant nsis -Dauthcert.use="clarity_certs/cert.pem"
+ant nsis -Dtarget.arch=aarch64 -Dauthcert.use="clarity_certs/cert.pem"
 ```
