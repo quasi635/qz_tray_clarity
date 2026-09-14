@@ -15,3 +15,4 @@
 windows-debug-launcher.nsi.in
 /ant/private/qz.ks
 /ant/deps/ivy
+/clarity_certs/
